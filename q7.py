@@ -2,7 +2,7 @@
 
 #user data 
 num_1 = int(input("enter the 1st digit :"))
-num_2 = int(input("enter the 2nd digit (>0) :"))
+num_2 = int(input("enter the 2nd digit :"))
 
 print("1)addition\n2)subtraction\n3)multiplication\n4)division\n5)floor division\n6)remainder\n7)exponentiation")
 value = int(input("enter the operation no. from above :"))
