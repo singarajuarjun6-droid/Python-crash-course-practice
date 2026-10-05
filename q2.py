@@ -37,5 +37,5 @@ print("Product 2 :",p2_name," | ","QTY :",p2_qty," | ","Sub-price :",p2_price," 
 print("Product 3 :",p3_name," | ","QTY :",p3_qty," | ","Sub-price :",p3_price," | ","total_p3 :",p3_total_price)
 print("\nTotal price :",total_bill)
 print("\nafter gst price (18%) :",after_gst)
-print("\nfinal price :",after_discount)
+print("\nfinal price in store :",after_discount)
 
