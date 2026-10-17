@@ -20,22 +20,43 @@ def calc_total(roll):
     sum = 0
     for sub in subjects:
         sum = sum + students[roll][sub]
-    print(sum)
+    return sum
     
 
 
 
 #calculate_average()
+def cacl_avg(roll):
+    sum = 0
+    count = 0
+    for sub in subjects:
+        sum = sum + students[roll][sub]
+        count+=1
+    return (sum/count)
+
 
 #find_highest()
+def calc_high(roll):
+    high = -1
+    for sub in subjects:
+        if (students[roll][sub] >= high):
+            high = students[roll][sub]
+    print(f"high :{high}")
 
 #find_lowest()
-
-#calculate_percentage
-
-#get_grade
+def calc_low(roll):
+    low = students[roll]["sub_1"]
+    for sub in subjects:
+        if(students[roll][sub] <= low):
+            low = students[roll][sub]
+    print(f"Low :{low}")
 
 
 add_student()
 print(students)
-calc_total(114)
+sum=calc_total(114)
+print(f"Sum is :{sum}")
+avg = cacl_avg(114)
+print(f"Avg is :{avg}")
+calc_high(114)
+calc_low(114)
